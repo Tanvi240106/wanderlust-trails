@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Wanderlust Trails</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Wanderlust Trails</h1>
+      <p>Explore the world with unforgettable experiences</p>
+      <button onclick="bookNow()">Book Now</button>
+    </div>
+  </header>
+
+  <section class="destinations fade-in">
+    <h2>Top Destinations</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="images/bali.jpg" alt="Bali" />
+        <h3>Bali, Indonesia</h3>
+      </div>
+      <div class="card">
+        <img src="images/paris.jpg" alt="Paris" />
+        <h3>Paris, France</h3>
+      </div>
+      <div class="card">
+        <img src="images/santorini.jpg" alt="Santorini" />
+        <h3>Santorini, Greece</h3>
+      </div>
+      <div class="card">
+        <img src="images/kyoto.jpg" alt="Kyoto" />
+        <h3>Kyoto, Japan</h3>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="contact fade-in">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" rows="4" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+  <footer>
+    <p>&copy; 2025 Wanderlust Trails. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
